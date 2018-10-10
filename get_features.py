@@ -5,7 +5,7 @@
 # Created on:   2018-01-27
 # Updated on:   2018-10-09
 
-import dlib         # 人脸识别的库 Dlib
+import dlib         # 人脸检测的库 Dlib
 import numpy as np  # 数据处理的库 numpy
 import cv2          # 图像处理的库 OpenCv
 import os           # 读取文件
@@ -59,6 +59,7 @@ imgs_no_smiles = os.listdir(path_images_no_smiles)
 path_csv = "data/data_csvs/"
 
 
+# 将数据库提取出的特征写入 CSV
 # write the features into CSV
 def write_into_CSV():
     with open(path_csv+"data.csv", "w", newline="") as csvfile:

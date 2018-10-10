@@ -65,6 +65,6 @@ cv2.putText(img_test, "LSVC:  "+y_predict_LSVC, (int(img_height/10), int(img_wid
 cv2.putText(img_test, "MLPC:  "+y_predict_MLPC, (int(img_height/10), int(img_width/10)*3), font, 0.8, (84, 255, 159), 1, cv2.LINE_AA)
 cv2.putText(img_test, "SGDC:  "+y_predict_SGDC, (int(img_height/10), int(img_width/10)*4), font, 0.8, (84, 255, 159), 1, cv2.LINE_AA)
 
-cv2.namedWindow("img", 2)
+cv2.namedWindow("img", 1)
 cv2.imshow("img", img_test)
 cv2.waitKey(0)
